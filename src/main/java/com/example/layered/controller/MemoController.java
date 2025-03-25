@@ -47,7 +47,6 @@ public class MemoController {
     public ResponseEntity<MemoResponseDto> findMemoById(@PathVariable Long id){
 
         return new ResponseEntity<>(memoService.findMemoById(id), HttpStatus.OK);
-
     }
 
     @PutMapping("/{id}")
